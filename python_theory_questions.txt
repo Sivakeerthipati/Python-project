@@ -1,0 +1,49 @@
+Python - Theory questions
+
+1. Difference between Global Vs Local variables
+2. Difference between Scope Vs Lifetime of a variable
+3. Difference between Shallow copy Vs Deep copy in python
+4. Difference between Comprehension Vs Generator
+5. What is Python? What are the benefits of using Python?
+6. What is the difference between list Vs tuple?
+7. Difference between pass by value Vs pass by reference?
+8. What is the difference between mutable Vs immutable data types?
+9. In Python, what is slicing?
+10. How can you generate random numbers in Python?
+11. What is the use of ‘//‘ operator in Python?
+12. What is MVC model? Explain. Model-View-Controller
+13. What is pip and what is PEP8?
+14. What is the purpose of __init__() and __delete__() functions in Python?
+15. What is ‘self’ parameter in an object method? Explain
+16. What is the difference between normal functions and Lambda functions?
+17. How is exception handling is done in Python?
+18. What are membership operators in python? explain. [ hint: is, in, not in ]
+19. What is the command to get all keys in a dictionary?
+20. What is ‘monkey patching’  in python?
+21. What are different ways of importing a module in python?
+22. What are *args and **kwargs in python?
+23. What are decorators in python?
+24. What is pickling and unpickling in Python?
+25. What is the use of help() and dir() functions in python?
+26. What are negative indices in python and why they are used?
+27. What are map(), filter() functions used for, in python?
+28. What is the difference between python append() and extend() functions?
+29. How can you merge one dictionary with another in python?
+30. Name some standard python errors you know? [ Hint: TypeError, NameError, IndexError, KeyError, ValueError etc ]
+31. How will you debug a python script?
+32. Explain getattr() and setattr() functions in Python?
+33. How are ord() and chr() functions related in Python?
+34. What is the use of built-in zip() function in python?
+35. Explain briefly about any() and all() functions?
+36. What does yield() keyword do in python?
+37. Difference between @staticmethod and @classmethod in Python?
+38. How is memory managed in python?
+39. How to perform static analysis on python code? [ Hint: PyChecker, Pylint ]
+40. How is python thread safe?
+41. What are class variables in python? Explain.
+42. What is the __dict__ attribute in python?
+43. How the garbage collector works in Python? Describe Python's garbage collection mechanism in brief.
+44. What do else and finally constructs do in exception handling?
+45. What is GIL? Explain
+
+

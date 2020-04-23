@@ -1,0 +1,911 @@
+Python 100+ Important Multiple Choice Questions
+
+01. What will be the output of the following Python code?
+print("Hello {name1} and {name2}".format(name1='foo', name2='bin'))
+
+a) Hello foo and bin
+b) Hello {name1} and {name2}
+c) Error
+d) Hello and
+
+02.What will be the output of the following Python code snippet?
+print('The sum of {0} and {1} is {2}'.format(2, 10, 12))
+
+a) The sum of 2 and 10 is 12
+b) Error
+c) The sum of 0 and 1 is 2
+d) None of the mentioned
+
+03.What will be the output of the following Python code snippet?
+print('The sum of {0:b} and {1:x} is {2:o}'.format(2, 10, 12))
+
+a) The sum of 2 and 10 is 12
+b) The sum of 10 and a is 14
+c) The sum of 10 and a is c
+d) Error
+>> Explanation: 2 is converted to binary, 10 to hexadecimal and 12 to octal.
+
+04. Which one of these is floor division?
+a) /
+b) //
+c) %
+d) None of the mentioned
+
+05.Which of these in not a core data type?
+a) Lists
+b) Dictionary
+c) Tuples
+d) Class
+
+06.What will be the output of the following Python code?
+>>>str="hello" >>>str[:2] >>>
+a) he b) lo c) olleh d) hello
+
+
+07. What will be the output of the following Python code snippet if x=1?
+x<<2
+a) 8 b) 1 c) 2 d) 4
+08.What will be the output of the following Python code if a=10 and b =20?
+a=10
+b=20
+a=a^b
+b=a^b
+a=a^b
+print(a,b)
+
+a) 10 20 b) 10 10 c) 20 10 d) 20 20
+09. What will be the output of the following Python expression if X=345?
+print(“%06d”%X)
+
+a) 345000 b) 000345 c) 000000345 d) 345000000
+10. What will be the output of the following Python expression if x=56.236?
+print("%.2f"%x)
+
+a) 56.00
+b) 56.24
+c) 56.23
+d) 0056.236
+
+11. What will be the output of the following Python code?
+t = '%(a)s, %(b)s, %(c)s'
+t % dict(a='hello', b='world', c=‘universe')
+
+a) ‘hello, world, universe’ b) ‘hellos, worlds, universes’ c) Error d) hellos, world, universe
+
+
+
+
+
+
+
+12. What will be the output of the following Python code?
+x = ['ab', 'cd']
+for i in x:
+    i.upper()
+print(x)
+a) [‘ab’, ‘cd’]  b) [‘AB’, ‘CD’]  c) [None, None]  d) none of the mentioned
+Explanation: The function upper() does not modify a string in place, it returns a new string which isn’t being stored anywhere.
+
+13. What will be the output of the following Python code?
+x = ['ab', 'cd']
+for i in x:
+    x.append(i.upper())
+print(x)
+
+a) [‘AB’, ‘CD’]  b) [‘ab’, ‘cd’, ‘AB’, ‘CD’]  c) [‘ab’, ‘cd’]  d) none of the mentioned
+14. What will be the output of the following Python code?
+x = 'abcd'
+for i in x:
+    print(i.upper())
+a) a b c d b) A B C D c) a B C D d) error
+15. What will be the output of the following Python code?
+x = 'abcd'
+for i in range(len(x)):
+    print(i)
+a) a b c d b) 0 1 2 3 c) error d) 1 2 3 4
+16. What will be the output of the following Python code?
+d = {0: 'a', 1: 'b', 2: 'c'}
+for i in d:
+    print(i)
+a) 0 1 2 b) a b c c) 0 a 1 b 2 c d) none of the mentioned
+17. What will be the output of the following Python code?
+d = {0: 'a', 1: 'b', 2: 'c'}
+for x, y in d.items():
+    print(x, y)
+a) 0 1 2 b) a b c c) 0 a 1 b 2 c d) none of the mentioned
+18, What will be the output of the following Python code?
+d = {0: 'a', 1: 'b', 2: 'c'}
+for x in d.keys():
+    print(d[x])
+a) 0 1 2 b) a b c c) 0 a 1 b 2 c d) none of the mentioned
+19. What will be the output of the following Python code?
+d = {0: 'a', 1: 'b', 2: 'c'}
+for x in d.values():
+    print(x)
+a) 0 1 2 b) a b c c) 0 a 1 b 2 c d) none of the mentioned
+20. What will be the output of the following Python code snippet?
+for i in [1, 2, 3, 4][::-1]:
+    print (i)
+a) 1 2 3 4 b) 4 3 2 1 c) error d) none of the mentioned
+21. What will be the output of the following Python code snippet?
+x = 2
+for i in range(x):
+    x += 1
+    print (x)
+a) 0 1 2 3 4 … b) 0 1 c) 3 4 d) 0 1 2 3
+22. What will be the output of the following Python code?
+x = (i for i in range(3))
+for i in x:
+    print(i)
+a) 0 1 2
+b) error
+c) 0 1 2 0 1 2      d) none of the above
+23. What will be the output of the following Python code?
+for i in range(5):
+    if i == 5:
+        break
+    else:
+        print(i)
+else:
+    print("Here")
+a) 0 1 2 3 4 Here b) 0 1 2 3 4 5 Here c) 0 1 2 3 4 d) 1 2 3 4 5
+24. What will be the output of the following Python code?
+string = "my name is x"
+for i in string.split():
+    print (i, end=", ")
+a) m, y, , n, a, m, e, , i, s, , x, b) m, y, , n, a, m, e, , i, s, , x c) my, name, is, x, d) error
+25. What is the length of sys.argv?
+a) number of arguments
+b) number of arguments + 1
+c) number of arguments – 1
+d) none of the mentioned
+Explanation: The first argument is the name of the program itself. Therefore the length of sys.argv is one more than the number arguments.
+
+26. What will be the output of the following Python code?
+def foo(fname, val):
+    print(fname(val))
+foo(max, [1, 2, 3])
+a) 3
+b) 1
+c) error
+d) none of the mentioned
+Explanation: It is possible to pass function names as arguments to other functions.
+
+27. What is the value stored in sys.argv[0]?
+a) null
+b) you cannot access it
+c) the program’s name
+d) the first argument
+
+Which of the following functions can help us to find the version of python that we are currently working on?
+a) sys.version
+b) sys.version()
+c) sys.version(0)
+d) sys.version(1)
+28. To read the next line of the file from a file object infile, we use
+a) infile.read(2)
+b) infile.read()
+c) infile.readline()
+d) infile.readlines()
+
+29. The readlines() method returns ____________
+a) str
+b) a list of lines
+c) a list of single characters
+d) a list of integers
+
+30. Given a string example=”hello” what is the output of example.count(‘l’)?
+a) 2
+b) 1
+c) None
+d) 0
+
+31. What is “Hello”.replace(“l”, “e”)?
+a) Heeeo
+b) Heelo
+c) Heleo
+d) None
+
+32. What will be the output of the following Python code?
+print('ab12'.isalnum())
+a) True b) False c) None
+33. Suppose list1 is [1, 3, 2], What is list1 * 2?
+a) [2, 6, 4] 
+b) [1, 3, 2, 1, 3] 
+c) [1, 3, 2, 1, 3, 2] 
+d) [1, 3, 2, 3, 2, 1] 
+
+34. Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after list1.reverse()?
+a) [3, 4, 5, 20, 5, 25, 1, 3] 
+b) [1, 3, 3, 4, 5, 5, 20, 25] 
+c) [25, 20, 5, 5, 4, 3, 3, 1] 
+d) [3, 1, 25, 5, 20, 5, 4, 3] 
+
+35. What will be the output of the following Python code?
+def f(values):
+	values[0] = 44
+v = [1, 2, 3]
+f(v)
+print(v)
+
+a) [1, 44]
+b) [1, 2, 3, 44]
+c) [44, 2, 3]
+ 36. What will be the output of the following Python code?
+num = ['One', 'Two', 'Three']
+for i, x in enumerate(num):
+    print('{}: {}'.format(i, x),end=" ")
+
+a) 1: 2: 3:
+b) Exception is thrown
+c) One Two Three
+d) 0: One 1: Two 2: Three
+
+37. What will be the output of the following Python code snippet?
+k = [print(i) for i in my_string if i not in "aeiou"]
+a) prints all the vowels in my_string
+b) prints all the consonants in my_string
+c) prints all characters of my_string that aren’t vowels
+d) prints only on executing print(k)
+
+38. What will be the output of the following Python code snippet?
+print([i.lower() for i in "HELLO"])
+a) [‘h’, ‘e’, ‘l’, ‘l’, ‘o’] 
+b) ‘hello’
+c) [‘hello’] 
+d) hello
+
+39. What will be the output of the following Python code snippet?
+print([i+j for i in "abc" for j in "def"])
+a) [‘da’, ‘ea’, ‘fa’, ‘db’, ‘eb’, ‘fb’, ‘dc’, ‘ec’, ‘fc’] 
+b) [[‘ad’, ‘bd’, ‘cd’], [‘ae’, ‘be’, ‘ce’], [‘af’, ‘bf’, ‘cf’]] 
+c) [[‘da’, ‘db’, ‘dc’], [‘ea’, ‘eb’, ‘ec’], [‘fa’, ‘fb’, ‘fc’]] 
+d) [‘ad’, ‘ae’, ‘af’, ‘bd’, ‘be’, ‘bf’, ‘cd’, ‘ce’, ‘cf’] 
+
+40. What will be the output of the following Python code?
+[ord(ch) for ch in 'abc']
+a) [97, 98, 99]
+b) [‘97’, ‘98’, ‘99’]
+c) [65, 66, 67]
+
+41. What will be the output of the following Python code?
+nums = set([1,1,2,3,3,3,4,4])
+print(len(nums))
+a) 7
+b) Error, invalid syntax for formation of set
+c) 4
+d) 8
+
+42. What will be the output of the following Python code snippet?
+{a**2 for a in range(4)}
+a) {1, 4, 9, 16}
+b) {0, 1, 4, 9, 16}
+c) Error
+d) {0, 1, 4, 9}
+43. What will be the output of the following Python code snippet?
+d = {"john":40, "peter":45}
+"john" in d
+a) True
+b) False
+c) None
+d) Error
+
+44. What will be the output of the following Python code snippet?
+a={1:"A",2:"B",3:"C"}
+print(a.get(1,4))
+a) 1
+b) A
+c) 4
+d) Invalid syntax for get method
+Explanation: The get() method returns the value of the key if the key is present in the dictionary and the default value(second parameter) if the key isn’t present in the dictionary.
+
+45. What will be the output of the following Python code snippet?
+a={1:"A",2:"B",3:"C"}
+print(a.get(5,4))
+a) Error, invalid syntax
+b) A
+c) 5
+d) 4
+
+46. What will be the output of the following Python function?
+any([2>8, 4>2, 1>2])
+a) Error
+b) True
+c) False
+d) 4>2
+Explanation: The built-in function any() returns true if any or more of the elements of the iterable is true (non zero), If all the elements are zero, it returns false.
+
+47. What will be the output of the following Python code?
+def printMax(a, b):
+	if a > b:
+		print(a, 'is maximum’)
+	elif a == b:
+		print(a, 'is equal to', b)
+	else:
+		print(b, 'is maximum')
+
+printMax(3, 4)
+
+a) 3
+b) 4
+c) 4 is maximum
+d) None of the mentioned
+
+
+48. What will be the output of the following Python code?
+def say(message, times = 1):
+	print(message * times)
+
+say('Hello')
+say('World', 5)
+a) 
+Hello
+WorldWorldWorldWorldWorld
+b) 
+Hello
+World 5
+c) 
+Hello
+World,World,World,World,World
+
+49. What will be the output of the following Python code?
+    def sum(*args):
+       '''Function returns the sum 
+       of all values'''
+       r = 0
+       for i in args:
+          r += i
+       return r
+
+    print sum.__doc__
+    print sum(1, 2, 3)
+    print sum(1, 2, 3, 4, 5)
+a) 
+6
+15
+b) 
+6
+100
+c) 
+123
+12345
+d) None of the mentioned
+50. What will be the output of the following Python code?
+lamb = lambda x: x ** 3
+print(lamb(5))
+a) 15
+b) 555
+c) 125
+d) None of the mentioned
+
+
+51. What will be the output of the following Python code?
+def change(one, *two):
+   print(type(two))
+change(1,2,3,4)
+a) Integer
+b) Tuple
+c) Dictionary
+d) An exception is thrown
+
+52. What is the output of the following code?
+x = 0
+while x < 4:
+    x = x + 1
+print("x is", x)
+A. x is 0
+B. x is 1
+C. x is 2
+D. x is 3
+E. x is 4
+
+53. What will be displayed when the following code is executed?
+number = 6
+while number > 0:
+        number -= 3
+        print(number, end = ‘ ‘)
+A. 6 3 0
+B. 6 3 
+C. 3 0
+D. 3 0 -3
+E. 0 -3
+
+54. Which of the following loops prints "Welcome to Python" 10 times?
+A:
+for count in range(1, 10):
+    print("Welcome to Python")
+
+B:
+for count in range(0, 10):
+    print("Welcome to Python")
+
+C:
+for count in range(1, 11):
+  print("Welcome to Python")
+
+D:
+for count in range(1, 12):
+  print("Welcome to Python”)
+A. BD
+B. ABC
+C. AC
+D. BC
+E. AB
+55. Given the following four patterns,
+
+Pattern A        Pattern B        Pattern C        Pattern D
+1                1 2 3 4 5 6                1      1 2 3 4 5 6
+1 2              1 2 3 4 5                2 1        1 2 3 4 5
+1 2 3            1 2 3 4                3 2 1          1 2 3 4
+1 2 3 4          1 2 3                4 3 2 1            1 2 3
+1 2 3 4 5        1 2                5 4 3 2 1              1 2
+1 2 3 4 5 6      1                6 5 4 3 2 1                1
+
+Which of the above patterns is produced by the following code?
+for i in range(1, 6 + 1):
+    for j in range(6, 0, -1):
+       print(j if j <= i else " ", end = " ")
+    print()
+A. Pattern A
+B. Pattern B
+C. Pattern C
+D. Pattern D
+
+56. What will be displayed by after the following loop terminates?
+number = 25
+isPrime = True
+for i in range(2, number):
+    if number % i == 0:
+        isPrime = False
+        break
+
+print("i is", i, "isPrime is", isPrime)
+A. i is 5 isPrime is True
+B. i is 5 isPrime is False
+C. i is 6 isPrime is True
+D. i is 6 isPrime is False
+
+57. If a function does not return a value, by default, it returns ___________.
+A. None
+B. int
+C. double
+D. public
+E. null
+
+58. When you invoke a function with a parameter, the value of the argument is passed to the parameter. This is referred to as _________.
+A. function invocation
+B. pass by value
+C. pass by reference
+D. pass by name
+
+
+
+
+
+59. Given the following function
+
+def nPrint(message, n):
+    while n > 0:
+        print(message)
+        n -= 1
+What will be displayed by the call nPrint('a', 4)?
+A. aaaaa
+B. aaaa
+C. aaa
+D. invalid call
+E. infinite loop
+
+60. What will be displayed by the following code?
+x = 1
+def f1():
+    x = 3
+    print(x)
+f1()
+print(x) 
+A. 1 3
+B. 3 1
+C. The program has a runtime error because x is not defined.
+D. 1 1
+E. 3 3
+
+61. What will be displayed by the following code?
+x = 1
+def f1():
+    global x
+    x = x + 2
+    print(x)
+f1()
+print(x) 
+A. 1 3
+B. 3 1
+C. The program has a runtime error because x is not defined.
+D. 1 1
+E. 3 3
+
+62. What is max("Programming is fun")?
+A. P
+B. r
+C. a blank space character 
+D. u
+E. n
+
+63. Given a string s = "Welcome", what is s.count('e')?
+A. 1
+B. 2
+C. 3
+D. 4
+64. Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is max(list1)? 
+A. 5
+B. 4
+C. 8
+D. 25
+E. 1
+
+65. Suppose list1 is [1, 3, 2, 5], what is sum(list1)? 
+A. 5
+B. 4
+C. 6
+D. 2
+E. 11
+
+66. Which of the below statements are True?
+A) list is mutable, a tuple is immutable
+B) list is mutable, a tuple is mutable
+C) list is immutable, a tuple is mutable
+D) list is immutable, a tuple is immutable
+
+67. What is the output of below lines in python
+a,b=2,3
+min=a if a<b else b
+print(min)
+
+A) 3
+B) 23
+C) 2
+D) error
+
+68. What is the output of the below code?
+for i in range(7):
+	if i==3: continue
+	print(i)
+A) 1 2 3 4 5 6 7
+B) 1 2 3 4 5 6
+C) 1 2 4 5 6
+D) 1 2 4 5 6 7
+
+69. What is the output of the following program :
+Y = 8
+Z = lambda X: X * Y
+print( Z(6))
+A) 48
+B) 14
+C) 64
+D) Error
+
+70. Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after list1.pop(1)?
+a) [3, 4, 5, 20, 5, 25, 1, 3]
+b) [1, 3, 3, 4, 5, 5, 20, 25]
+c) [3, 5, 20, 5, 25, 1, 3]
+d) [1, 3, 4, 5, 20, 5, 25]
+71. What will be the output of the following Python code?
+def a(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return a(n-1)+a(n-2)
+for i in range(0,4):
+    print(a(i),end=" “)
+
+a) 0 1 2 3 b) An exception is thrown c) 0 1 1 2 3 d) 0 1 1 2
+71. What is the output of below python code?
+data = 50
+try: 
+    data = data/10
+except ZeroDivisionError: 
+    print('Cannot divide by 0 ', end = '') 
+finally: 
+    print(‘Python Training ', end = '') 
+else: 
+    print('Division successful ', end = '') 
+
+a) Runtime error b) Cannot divide by 0 Python Training c) Python Training Division successful d) Python Training Explanation: else block following a finally block is not allowed in python. Python throws syntax error when such format is used.
+72. What is the output of below python code?
+value = [1, 2, 3, 4] 
+data = 0
+try: 
+    data = value[4] 
+except IndexError: 
+    print('VBR', end = '') 
+except: 
+    print(‘Python Trainer ', end = '') 
+a) Python Trainer
+b) VBR
+c) VBR Python Trainer
+d) Compilation error
+73.what is the output of the following code?
+my_string = 'geeksforgeeks'
+for i in range(len(my_string)): 
+    print (my_string) 
+    my_string = 'a'
+a) gaaaaaaaaaaaa
+b) geeksforgeeks a a a a a a a a a a a a
+c)  Error
+d)  None
+Explanation: String is modified only after ‘geeksforgeeks’ has been printed once.
+
+74. What is the output of the following program?
+T = tuple('geeks') 
+a, b, c, d, e = T 
+b = c = '*'
+T = (a, b, c, d, e) 
+print(T) 
+
+a) (‘g’, ‘*’, ‘*’, ‘k’, ‘s’)
+b) (‘g’, ‘e’, ‘e’, ‘k’, ‘s’)
+c) (‘geeks’, ‘*’, ‘*’)
+d) KeyError
+Explanation: A tuple is created as T = (‘g’, ‘e’, ‘e’, ‘k’, ‘s’), then it is unpacked into a, b, c, d and e, mapping from ‘g’ to a and ‘s’ to e. b and c which are both ‘e’ are equal to ‘*’ and then the existing tuple is replaced by packing a, b, c, d and e into a tupple T.
+
+75. What is the output of the following program?
+f=lambda x:bool(x%2)
+print(f(20), f(21))
+
+a) False True
+b) False False
+c) True True
+d) True False
+Explanation: The code shown above will return true if the given argument is an odd number, and false if the given argument is an even number. Since the arguments are 20 and 21 respectively, the output of this code is: False True.
+
+76. What will be the output of the following Python code?
+import functools
+l=[1,2,3,4]
+print(functools.reduce(lambda x,y:x*y,l))
+
+a) Error
+b) 10
+c) 24
+d) No output
+
+77. What will be the output of the following Python code?
+import functools
+l=[1, 2, 3, 4, 5]
+m=functools.reduce(lambda x, y:x if x>y else y, l)
+print(m)
+
+a) Error
+b) Address of m
+c) 1
+d) 5
+
+
+
+
+78. What will be the output of the following Python code?
+list(map((lambda x:x**2), range(10)))
+
+a) [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+b) Error
+c) [2, 3, 0, 1, 6, 7, 4, 5, 10, 11]
+d) No output
+
+79. What will be the output of the following Python code?
+list(map((lambda x:x**2), filter((lambda x:x%2==0), range(10))))
+
+a) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+b) [0, 4, 16, 36, 64]
+c) Error
+d) No output
+Explanation: The output list will contain each number up to 10 raised to 2, except odd numbers, that is, 1, 3, 5, 9. Hence the output of the code is: [0, 4, 16, 36, 64].
+
+80. What will be the output of the following Python code?
+
+class test:
+     def __init__(self,a="Hello World"):
+         self.a=a
+     def display(self):
+         print(self.a)
+obj=test()
+obj.display()
+
+a) The program has an error because constructor can’t have default arguments
+b) Nothing is displayed
+c) “Hello World” is displayed
+d) The program has an error display function doesn’t have parameters
+
+81. What is setattr() used for?
+a) To access the attribute of the object
+b) To set an attribute
+c) To check if an attribute exists or not
+d) To delete an attribute
+Explanation: setattr(obj,name,value) is used to set an attribute. If attribute doesn’t exist, then it would be created. Similarly, getattr(obj,name) is used to get the attribute of an object.
+
+82. What will be the output of the following Python code?
+class change:
+    def __init__(self, x, y, z):
+        self.a = x + y + z
+x = change(1,2,3)
+y = getattr(x, 'a')
+setattr(x, 'a', y+1)
+print(x.a)
+
+a) 6 b) 7 c) Error d) 0
+83. What will be the output of the following Python code?
+class fruits:
+    def __init__(self, price):
+        self.price = price
+obj=fruits(50)
+ 
+obj.quantity=10
+obj.bags=2
+print(obj.quantity+len(obj.__dict__)) 
+a) 12 b) 52 c) 13 d) 60
+Explanation: In the above code, obj.quantity has been initialised to 10. There are a total of three items in the dictionary, price, quantity and bags. Hence, len(obj.__dict__) is 3.
+
+84. Is the following Python code valid?
+class B(object):
+  def first(self):
+    print("First method called")
+  def second():
+    print("Second method called")
+ob = B()
+B.first(ob)
+a) It isn’t as the object declaration isn’t right b) It isn’t as there isn’t any __init__ method for initializing class members c) Yes, this method of calling is called unbounded method call d) Yes, this method of calling is called bounded method call
+Explanation: The method may be created in the method demonstrated in the code as well and this is called as the unbounded method call. Calling the method using obj.one() is the bounded method call.
+
+85. What will be the output of the following Python code?
+class demo():
+	def __repr__(self):
+		return '__repr__ built-in function called'
+	def __str__(self):
+		return '__str__ built-in function called'
+sd_obj =demo()
+sd_obj
+a) Error b) Nothing is printed c) __str__ called d) __repr__ called
+Explanation: __repr__ is used for producing a string representation of an object’s value that Python can evaluate. Execute in python shell to verify.
+86. What will be the output of the following Python code?
+class demo():
+	def __repr__(self):
+		return '__repr__ built-in function called'
+	def __str__(self):
+		return '__str__  built-in function called'
+s=demo()
+print(s)
+
+a) __str__ called b) __repr__ called c) Error d) Nothing is printed
+87. What will be the output of the following Python code?
+class stud:
+   ‘Base class for all students’
+   def __init__(self, roll_no, grade):
+      self.roll_no = roll_no
+      self.grade = grade
+   def display (self):
+      print("Roll no : ", self.roll_no,  ", Grade: ", self.grade)
+print(student.__doc__)
+
+a) Exception is thrown b) __main__ c) Nothing is displayed d) Base class for all students
+88. What will be the output of the following Python code?
+class Demo:
+    def __init__(self):
+        self.a = 1
+        self.__b = 1
+ 
+    def display(self):
+        return self.__b
+ 
+obj = Demo()
+print(obj.__b)
+
+a) The program has an error because there isn’t any function to return self.a b) The program has an error because b is private and display(self) is returning a private member c) The program has an error because b is private and hence can’t be printed d) The program runs fine and 1 is printed
+Explanation: Variables beginning with two underscores are said to be private members of the class and they can’t be accessed directly.
+
+
+
+
+89. What will be the output of the following Python code?
+class Demo:
+     def __init__(self):
+         self.a = 1
+         self.__b = 1
+ 
+     def get(self):
+         return self.__b
+ 
+obj = Demo()
+print(obj.get())
+
+a) The program has an error because there isn’t any function to return self.a b) The program has an error because b is private and display(self) is returning a private member c) The program has an error because b is private and hence can’t be printed d) The program runs fine and 1 is printed
+Explanation: Here, get(self) is a member of the class. Hence, it can even return a private member of the class. Because of this reason, the program runs fine and 1 is printed.
+
+90. What will be the output of the following Python code?
+import datetime
+d=datetime.date(2016,7,24)
+print(d)
+
+a) Error b) 2017-07-24 c) 2017-7-24 d) 24-7-2017
+91.What will be the output of the following Python code?
+import time
+time.time()
+a) The number of hours passed since 1st January, 1970 b) The number of days passed since 1st January, 1970 c) The number of seconds passed since 1st January, 1970 d) The number of minutes passed since 1st January, 1970
+92.What will be the output of the following Python code?
+import re 
+sentence = 'we are humans'
+matched = re.match(r'(.*) (.*?) (.*)', sentence)
+print(matched.group(2))
+a) ‘are’ b) ‘we’ c) ‘humans’ d) ‘we are humans’
+
+
+93. What will be the output of the following Python code?
+sentence = 'horses are fast'
+regex = re.compile('(?P<animal>\w+) (?P<verb>\w+) (?P<adjective>\w+)')
+matched = re.search(regex, sentence)
+print(matched.groupdict())
+
+a) {‘animal’: ‘horses’, ‘verb’: ‘are’, ‘adjective’: ‘fast’} b) (‘horses’, ‘are’, ‘fast’) c) ‘horses are fast’ d) ‘are’
+94. What will be the output of the following Python code?
+import re
+re.sub('morning', 'evening', 'good morning’)
+
+a) ‘good evening’ b) ‘good’ c) ‘morning’ d) ‘evening’
+95. What will be the output of the following Python code?
+def test(i,j):
+    if(i==0):
+        return j
+    else:
+        return test(i-1,i+j)
+print(test(4,7))
+a) 13 b) 7 c) Infinite loop d) 17
+
+96. What is the output?
+n = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+print n[2]
+
+a. [6, 5, 4]
+b. 2
+c. 7
+d. [3, 2, 1]
+
+97. What is the output?
+def myFun(*argv):  
+    for arg in argv:  
+        print (arg) 
+    
+myFun('Hello', 'Welcome', 'to', ‘PythonTraining’)
+
+a. Error
+b.’Hello Welcome to Python Training’
+c. Hello
+   Welcome
+   to
+   Python
+   Training
+d. Python Training
+
+98. What is the output?
+my_list = ['apple', 'banana', 'grapes', 'pear']
+counter_list = list(enumerate(my_list, 1))
+print(counter_list)
+a. apple
+b. Error
+c. banana grapes pear
+d. [(1, 'apple'), (2, 'banana'), (3, 'grapes'), (4, ‘pear')]
+
+99. Output?
+print (all([True, True, True, True])) 
+print (all([False, True, True, False])) 
+print (all([False, False, False])) 
+a.True False False
+b. Error
+c. True True True
+d. False False False
+
+100. What is the output?
+n = 10
+result = 1 < n < 20
+print(result) 
+a) False
+b) Syntax error
+c) True
+d) 10
+
