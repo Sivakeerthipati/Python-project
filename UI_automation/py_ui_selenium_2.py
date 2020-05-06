@@ -38,4 +38,6 @@ if __name__ == '__main__':
     go_to_simple_form_demo( b_driver)
     single_input_field( b_driver)
     close_browser( b_driver)
+else:
+    print("This module has been imported. Not RUN.")
 
